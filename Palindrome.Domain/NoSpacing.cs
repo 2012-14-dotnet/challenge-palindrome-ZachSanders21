@@ -8,10 +8,11 @@ namespace Palindrome.Domain
         {   
             // string nospace = String.Concat(input.Where(c => !char.IsWhiteSpace(c)));
             // return nospace;
+            string output = new string(input.ToCharArray()
+                            .Where(c => !char.IsWhiteSpace(c))
+                            .ToArray());
             
-            return new string(input.ToCharArray()
-                .Where(c => !char.IsWhiteSpace(c))
-                .ToArray());
+            return output;
         }
     }
 }

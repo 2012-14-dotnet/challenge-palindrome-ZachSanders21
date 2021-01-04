@@ -19,5 +19,9 @@ namespace Palindrome.Client
             var input = Console.ReadLine();
             Whitespace.NoWhiteSpace(input);
         }
+        static void StringTest()
+        {
+            
+        }
     }
 }
