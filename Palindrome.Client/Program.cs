@@ -6,7 +6,12 @@ namespace Palindrome.Client
     {
         static void Main(string[] args)
         {
-            
+            User();
+        }
+        static void User()
+        {
+            Console.WriteLine("Please enter word/sentence for palindrom check");
+            StringInput();
         }
         static void StringInput()
         {
