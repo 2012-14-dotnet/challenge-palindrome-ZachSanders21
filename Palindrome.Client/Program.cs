@@ -1,4 +1,5 @@
 ﻿using System;
+using Palindrome.Domain;
 
 namespace Palindrome.Client
 {
@@ -16,7 +17,7 @@ namespace Palindrome.Client
         static void StringInput()
         {
             var input = Console.ReadLine();
-            NoSpacing(input);
+            Whitespace.NoWhiteSpace(input);
         }
     }
 }
