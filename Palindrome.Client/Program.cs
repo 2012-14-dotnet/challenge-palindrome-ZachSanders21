@@ -14,14 +14,16 @@ namespace Palindrome.Client
             Console.WriteLine("Please enter word/sentence for palindrom check");
             StringInput();
         }
-        static void StringInput()
+        static string StringInput()
         {
             var input = Console.ReadLine();
-            Whitespace.NoWhiteSpace(input);
+            var output = Whitespace.NoWhiteSpace(input);
+            Stringsplit.stringsplit(output);
+            return output;
         }
         static void StringTest()
         {
-            
+            // check if string is same forwards and backwards
         }
     }
 }
